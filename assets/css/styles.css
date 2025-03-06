@@ -213,7 +213,7 @@ section.sobre .flex {
     text-align: justify;
 }
 
-.sobre .txt-sobre .btn-social button {
+.btn-social button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -225,7 +225,7 @@ section.sobre .flex {
     transition: 0.3s;
 }
 
-.sobre .txt-sobre .btn-social button:hover {
+.btn-social button:hover {
     background-color: var(--cor-segundaria);
     /* Cor alternativa ao passar o mouse */
     color: var(--cor-preta);
@@ -238,6 +238,7 @@ section.sobre .flex {
 /*----------------------------------------------------------PROJECTOS*/
 section.projectos {
     padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
 }
 
 .projectos .flex {
@@ -375,8 +376,10 @@ form textarea {
 
 form textarea {
     resize: none;
-    min-height: 250px; /* Aumentei a altura mínima */
-    max-height: 400px; /* Aumentei a altura máxima */
+    min-height: 250px;
+    /* Aumentei a altura mínima */
+    max-height: 400px;
+    /* Aumentei a altura máxima */
 }
 
 form .btn-enviar {
@@ -398,4 +401,46 @@ form .btn-enviar input {
 form .btn-enviar input:hover {
     background-color: var(--cor-segundaria);
     transform: scale(1.05);
+}
+
+/* ---------------------------------------------------FOOTER*/
+/* ---------------------------------------------------FOOTER */
+footer {
+    padding: 50px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+    background-color: #121212; /* Opcional: Fundo escuro para destaque */
+}
+
+footer .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ajusta para telas menores */
+    gap: 20px; /* Espaço entre os elementos */
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 1px solid var(--cor-principal);
+}
+
+footer .line-footer p i {
+    color: var(--cor-principal);
+    font-size: 22px;
+}
+
+
+footer .line-footer p a {
+    color: var(--cor-branca);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 22px;
+}
+
+/* Efeito ao passar o mouse */
+footer .line-footer p a:hover {
+    color: var(--cor-principal);
 }
