@@ -455,6 +455,10 @@ footer .line-footer p a:hover {
         flex-direction: column;
     }
 
+    h2.titulo{
+        font-size: 30px;
+    }
+
     /*---------------------Cabeçalho*/
     .menu-desktop,
     .btn-contacto {
@@ -487,6 +491,8 @@ footer .line-footer p a:hover {
         padding: 25px;
         margin: 5px;
     }
+
+
 
     .swiper-slide h5 {
         font-size: 14px;
