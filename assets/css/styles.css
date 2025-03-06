@@ -89,6 +89,12 @@ header nav.menu-desktop ul li {
 }
 
 /*mobile*/
+
+.btn-abrir-menu i{
+    color: var(--cor-principal);
+    font-size: 40px;
+}
+
 .menu-mobile {
     background-color:var(--cor-preta);
     height: 100vh;
@@ -125,7 +131,16 @@ header nav.menu-desktop ul li {
    cursor: pointer;
 }
 
-
+.overlay-menu{
+    background-color:#000000a7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 888888;
+    display: none;
+}
 
 /* -----------------------------------------------ESTILO TOPO DO SITE */
 section.topo-do-site {
