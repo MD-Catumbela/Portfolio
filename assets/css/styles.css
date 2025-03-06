@@ -50,7 +50,7 @@ body {
     transition: 0.3s;
 }
 
- button:hover {
+button:hover {
     background-color: var(--cor-segundaria);
     transform: scale(1.05);
 }
@@ -134,14 +134,16 @@ section.topo-do-site .flex {
 
 /* ---------------------------------------------------------ESPECIALIDADES */
 .especialidades {
-    padding: 100px 4% 80px; /* Aumentei o espaçamento acima do título e abaixo do carrossel */
+    padding: 100px 4% 80px;
+    /* Aumentei o espaçamento acima do título e abaixo do carrossel */
     text-align: center;
 }
 
 .titulo {
     font-size: 28px;
     font-weight: bold;
-    margin-bottom: 40px; /* Adicionei mais espaço entre o título e o carrossel */
+    margin-bottom: 40px;
+    /* Adicionei mais espaço entre o título e o carrossel */
     color: var(--cor-branca);
 }
 
@@ -224,13 +226,16 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre .btn-social button:hover {
-    background-color: var(--cor-segundaria); /* Cor alternativa ao passar o mouse */
-    color: var(--cor-preta); /* Cor do texto ao passar o mouse */
-    transform: scale(1.05); /* Efeito de leve crescimento */
+    background-color: var(--cor-segundaria);
+    /* Cor alternativa ao passar o mouse */
+    color: var(--cor-preta);
+    /* Cor do texto ao passar o mouse */
+    transform: scale(1.05);
+    /* Efeito de leve crescimento */
 }
 
 
-/*PROJECTOS*/
+/*----------------------------------------------------------PROJECTOS*/
 section.projectos {
     padding: 40px 4%;
 }
@@ -286,27 +291,38 @@ section.projectos {
 
 
 .projectos .projectos-box a {
-    display: inline-block; /* Permite definir altura e largura */
-    padding: 10px 20px; /* Adiciona espaçamento interno */
+    display: inline-block;
+    /* Permite definir altura e largura */
+    padding: 10px 20px;
+    /* Adiciona espaçamento interno */
     margin: 20px 0;
     color: var(--cor-principal);
-    border-radius: 5px; /* Bordas arredondadas */
-    text-decoration: none; /* Remove sublinhado */
-    font-weight: bold; /* Deixa o texto mais destacado */
-    transition: 0.3s ease-in-out; /* Suaviza o efeito ao passar o mouse */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    text-decoration: none;
+    /* Remove sublinhado */
+    font-weight: bold;
+    /* Deixa o texto mais destacado */
+    transition: 0.3s ease-in-out;
+    /* Suaviza o efeito ao passar o mouse */
 }
 
 .projectos .projectos-box a:hover {
-    background-color: var(--cor-segundaria); /* Cor alternativa ao passar o mouse */
-    color: var(--cor-preta); /* Cor do texto ao passar o mouse */
-    transform: scale(1.05); /* Efeito de leve crescimento */
+    background-color: var(--cor-segundaria);
+    /* Cor alternativa ao passar o mouse */
+    color: var(--cor-preta);
+    /* Cor do texto ao passar o mouse */
+    transform: scale(1.05);
+    /* Efeito de leve crescimento */
 }
 
 .projectos .projectos-box .btn-codigo {
     display: flex;
-    flex-wrap: wrap; /* Quebra de linha para telas pequenas */
+    flex-wrap: wrap;
+    /* Quebra de linha para telas pequenas */
     gap: 10px;
-    justify-content: center; /* Centraliza os botões */
+    justify-content: center;
+    /* Centraliza os botões */
 }
 
 .projectos .projectos-box .btn-codigo button {
@@ -322,7 +338,64 @@ section.projectos {
 }
 
 .projectos .projectos-box .btn-codigo button:hover {
-    background-color: var(--cor-segundaria); /* Cor alternativa ao passar o mouse */
-    color: var(--cor-preta); /* Cor do texto ao passar o mouse */
-    transform: scale(1.05); /* Efeito de leve crescimento */
+    background-color: var(--cor-segundaria);
+    /* Cor alternativa ao passar o mouse */
+    color: var(--cor-preta);
+    /* Cor do texto ao passar o mouse */
+    transform: scale(1.05);
+    /* Efeito de leve crescimento */
+}
+
+/* ---------------------------------------------------FALA COMIGO */
+section.formulario {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: var(--cor-branca);
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    min-height: 250px; /* Aumentei a altura mínima */
+    max-height: 400px; /* Aumentei a altura máxima */
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: var(--cor-principal);
+    color: var(--cor-preta);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeito ao passar o mouse */
+form .btn-enviar input:hover {
+    background-color: var(--cor-segundaria);
+    transform: scale(1.05);
 }
