@@ -6,7 +6,7 @@
     --cor-principal: #ff8806;
     --cor-segundaria: #2ed0e4;
 
-    --cor-reserva:#00FF08;
+    --cor-reserva: #00FF08;
 }
 
 * {
@@ -40,6 +40,13 @@ header>.interface {
 header a {
     color: var(--cor-branca);
     text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a :hover {
+    color: var(--cor-segundaria);
+    transform: scale(1.05);
 }
 
 header nav ul {
@@ -51,7 +58,7 @@ header nav ul li {
     padding: 0 40px;
 }
 
-header .btn-contacto button  {
+header .btn-contacto button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 700;
