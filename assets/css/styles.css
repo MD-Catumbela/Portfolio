@@ -403,7 +403,7 @@ form .btn-enviar input:hover {
     transform: scale(1.05);
 }
 
-/* ---------------------------------------------------FOOTER*/
+
 /* ---------------------------------------------------FOOTER */
 footer {
     padding: 50px 4%;
@@ -435,7 +435,6 @@ footer .line-footer p i {
     font-size: 22px;
 }
 
-
 footer .line-footer p a {
     color: var(--cor-branca);
     text-decoration: none;
@@ -451,18 +450,54 @@ footer .line-footer p a:hover {
 /* ---------------------------------------------------RESPONSIVIDADE*/
 @media screen and (max-width: 1020px) {
 
-    /*Class Gerais*/
+    /*-----------------------Class Gerais*/
     .flex {
         flex-direction: column;
     }
 
-    /*Cabeçalho*/
+    /*---------------------Cabeçalho*/
     .menu-desktop,
     .btn-contacto {
         display: none;
     }
 
-    .topo-do-site {
-        justify-content: space-between;
+    /*----------------------Topo do Site*/
+    section.topo-do-site .flex {
+        gap: 10px;
     }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .txt-topo-site h1{
+        font-size: 32px;
+    }
+
+    .topo-do-site .img-topo-site img {
+       width: 100%;
+    }
+    
+/* ---------------------------------------------------------ESPECIALIDADES */
+.especialidades {
+    padding: 30px 4% 50px;
+}
+
+.swiper-slide {
+    padding: 25px;
+    margin: 5px;
+}
+
+.swiper-slide h5 {
+    font-size: 14px;
+}
+
+.swiper-slide img {
+    width: 40px;
+}
+    
+    
+    
+
+   
 }

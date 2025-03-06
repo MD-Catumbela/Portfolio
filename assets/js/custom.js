@@ -1,5 +1,5 @@
 var swiper = new Swiper(".especialidades-slider", {
-    slidesPerView: 6,
+    slidesPerView: 6, // Para telas grandes
     spaceBetween: 30,
     loop: true,
     autoplay: {
@@ -8,4 +8,16 @@ var swiper = new Swiper(".especialidades-slider", {
     },
     speed: 1000,
     slidesPerGroup: 1,
+
+    breakpoints: {
+        1020: { // Quando a tela for 1020px ou menor
+            slidesPerView: 5, // Exibe apenas 3 slides
+        },
+        768: { // Para tablets menores
+            slidesPerView: 5,
+        },
+        480: { // Para celulares
+            slidesPerView: 3,
+        }
+    }
 });
