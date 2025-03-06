@@ -59,7 +59,7 @@ body {
 }
 
 
-/* ESTILO CABEÇALHO */
+/* ---------------------------------------------------ESTILO CABEÇALHO */
 header {
     padding: 20px 4%;
 }
@@ -93,7 +93,7 @@ header nav ul li {
 }
 
 
-/* ESTILO TOPO DO SITE */
+/* -----------------------------------------------ESTILO TOPO DO SITE */
 section.topo-do-site {
     padding: 40px 4%;
 }
@@ -135,54 +135,55 @@ section.topo-do-site .flex {
     }
 }
 
-/* ESPECIALIDADES */
-
-section.especialidades {
-    padding: 40px 4%;
+/* ---------------------------------------------------------ESPECIALIDADES */
+.especialidades {
+    padding: 100px 4% 80px; /* Aumentei o espaçamento acima do título e abaixo do carrossel */
+    text-align: center;
 }
 
+.titulo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px; /* Adicionei mais espaço entre o título e o carrossel */
+    color: var(--cor-branca);
+}
 
-.especialidades .flex {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    /* Cria colunas dinâmicas */
-    gap: 40px;
-    /* Espaço entre os itens */
+.swiper {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-}
-
-
-.especialidades .especialidades-box {
     color: var(--cor-branca);
     padding: 40px;
     border-radius: 20px;
-    margin-top: 50px;
-    transition: 0.5s;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.1);
-    /* Fundo levemente transparente */
+    transition: 0.5s;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-
-.especialidades .especialidades-box:hover {
+.swiper-slide:hover {
     transform: scale(1.05);
     box-shadow: 0 0 8px var(--cor-branca);
 }
 
-
-.especialidades .especialidades-box img {
-    width: 80px;
-    /* Tamanho fixo da imagem */
-    max-width: 100%;
+.swiper-slide img {
+    width: 50px;
 }
 
-
-.especialidades .especialidades-box h3 {
-    font-size: 22px;
+.swiper-slide h5 {
+    font-size: 15px;
     margin: 15px 0;
 }
 
-/* SOBRE */
+/* ------------------------------------------------------------------SOBRE */
 section.sobre {
     padding: 40px 4%;
 }
@@ -220,6 +221,64 @@ section.sobre .flex {
     border: none;
     background-color: var(--cor-principal);
     font-size: 25px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 1.2s;
+}
+
+/*PROJECTOS*/
+section.projectos {
+    padding: 40px 4%;
+}
+
+
+.projectos .flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Cria colunas dinâmicas */
+    gap: 40px;
+    /* Espaço entre os itens */
+    justify-content: center;
+}
+
+
+.projectos .projectos-box {
+    color: var(--cor-branca);
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 50px;
+    transition: 0.5s;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Fundo levemente transparente */
+}
+
+
+.projectos .projectos-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px var(--cor-branca);
+}
+
+
+.projectos .projectos-box img {
+    width: 500px;
+    max-width: 100%;
+}
+
+
+
+.projectos .projectos-box h3 {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.projectos .projectos-box .btn-codigo button {
+    width: 30px;
+    height: 30px;
+    border-radius: 30%;
+    border: none;
+    background-color: var(--cor-principal);
+    font-size: 20px;
     cursor: pointer;
     margin: 0 5px;
     transition: 1.2s;
