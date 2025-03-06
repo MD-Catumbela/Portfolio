@@ -1,3 +1,4 @@
+// Seleciona o wrapper das habilidades
 const wrapper = document.getElementById('skills');
 const slides = Array.from(wrapper.children);
 const totalSlides = slides.length;
@@ -8,9 +9,11 @@ slides.forEach(slide => {
     wrapper.appendChild(clone);
 });
 
+// Inicializa o índice e a largura do slide
 let index = 0;
 const slideWidth = slides[0].offsetWidth; // Largura do slide
 
+// Função para mover os slides
 function moveSlide() {
     index++;
     if (index >= totalSlides) {
@@ -25,10 +28,13 @@ function moveSlide() {
     }
 }
 
+// Define um intervalo para mover os slides a cada 4 segundos
 setInterval(moveSlide, 4000);
 
 // Cursor Personalizado
 const cursor = document.querySelector('.cursor');
+
+// Atualiza a posição do cursor personalizado com base na posição do mouse
 document.addEventListener('mousemove', e => {
     cursor.style.left = e.clientX + 'px';
     cursor.style.top = e.clientY + 'px';

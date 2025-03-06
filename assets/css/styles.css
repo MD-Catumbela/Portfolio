@@ -25,32 +25,46 @@ body {
     padding: 100px 50px; /* 100px de espaçamento em cima e em baixo e 50px de espaçamento nas laterais */
 }
 
-/* Cabeçalho */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-    margin-left: 50px;
+/* Estilos do Navbar */
+.navbar {
+    background-color: var(--cor-cartao);
 }
 
-ul {
-    display: flex;
-    gap: 50px;
-    list-style: none;
+.navbar-brand {
+    font-size: 24px;
 }
 
-li a {
-    text-decoration: none;
-    color: var(--cor-texto);
-    font-weight: 500;
+.nav-link {
+    font-size: 18px;
     transition: color 0.3s ease;
-    font-size: 30px;
 }
 
-/* Mudança de cor no menu ao passar o cursor */
-li a:hover {
-    color: var(--cor-primaria); /* Muda a cor do texto do menu */
+.nav-link:hover {
+    color: var(--cor-primaria);
+}
+
+/* Ajustes para o botão do menu */
+.navbar-toggler {
+    border: none; /* Remove a borda do botão */
+}
+
+.navbar-toggler-icon {
+    background-color: var(--cor-primaria); /* Cor do ícone do menu */
+}
+
+/* Esconde o menu hamburger em telas maiores */
+@media (min-width: 760px) {
+    .navbar-toggler {
+        display: none; /* Esconde o botão do menu hamburger */
+    }
+}
+
+/* Exibe o menu normalmente em telas maiores */
+@media (min-width: 760px) {
+    .collapse {
+        display: flex !important; /* Garante que o menu esteja visível */
+        flex-direction: row; /* Alinha os itens do menu em linha */
+    }
 }
 
 /* Conteúdo Principal */
@@ -73,7 +87,7 @@ li a:hover {
 }
 
 .principal p {
-    font-size: 20px;
+    font-size: 22px; /* Tamanho do parágrafo na seção principal */
     margin-bottom: 40px;
     max-width: 500px;
     color: var(--cor-texto-secundario);
@@ -198,6 +212,7 @@ li a:hover {
 .conteudo-sobre p {
     margin-bottom: 20px;
     color: var(--cor-texto-secundario);
+    font-size: 18px; /* Tamanho do parágrafo na seção sobre */
 }
 
 /* CONTACTOS */
@@ -251,6 +266,29 @@ footer {
     padding: 20px 5%;
     text-align: center;
     border-top: 1px solid #222;
+    background-color: var(--cor-cartao);
+    color: var(--cor-texto);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: var(--cor-texto);
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--cor-primaria); /* Muda a cor ao passar o mouse */
 }
 
 /* Efeito de cursor */
@@ -327,35 +365,6 @@ footer {
     transform: scale(1.1);
 }
 
-footer {
-    padding: 20px 5%;
-    text-align: center;
-    border-top: 1px solid #222;
-    background-color: var(--cor-cartao);
-    color: var(--cor-texto);
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.social-links {
-    margin-top: 10px;
-}
-
-.social-links a {
-    color: var(--cor-texto);
-    margin: 0 10px;
-    font-size: 24px;
-    transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-    color: var(--cor-primaria); /* Muda a cor ao passar o mouse */
-}
-
 /* Responsividade para telas menores */
 img {
     max-width: 100%;
@@ -365,11 +374,6 @@ img {
 @media (max-width: 768px) {
     header {
         padding: 20px;
-    }
-
-    ul {
-        gap: 20px;
-        justify-content: flex-start;
     }
 
     .secao {
