@@ -194,9 +194,12 @@ section.topo-do-site .flex {
 }
 
 /* ---------------------------------------------------------ESPECIALIDADES */
+
+
+
 .especialidades {
     padding: 100px 4% 80px;
-    /* Aumentei o espaçamento acima do título e abaixo do carrossel */
+
     text-align: center;
 }
 
@@ -204,7 +207,7 @@ section.topo-do-site .flex {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 40px;
-    /* Adicionei mais espaço entre o título e o carrossel */
+
     color: var(--cor-branca);
 }
 
@@ -242,6 +245,7 @@ section.topo-do-site .flex {
     font-size: 15px;
     margin: 15px 0;
 }
+
 
 /* ------------------------------------------------------------------SOBRE */
 section.sobre {
@@ -588,4 +592,32 @@ footer .line-footer p a:hover {
         gap: 10px;
     }
 
+
+    /*sobre*/
+    .projectos-box {
+        max-width: 250px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .projectos-box {
+        max-width: 200px;
+    }
+
+    .btn-codigo button {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectos-box {
+        max-width: 90%;
+    }
 }
