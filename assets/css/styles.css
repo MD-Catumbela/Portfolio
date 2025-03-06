@@ -1,6 +1,12 @@
 /*ESTILO GERAL*/
 :root {
-    --cor-fundo: #000;
+    --cor-preta: #000;
+    --cor-branca: #fff;
+    --cor-cinza: #7d7d7d;
+    --cor-principal: #ff8806;
+    --cor-segundaria: #2ed0e4;
+
+    --cor-reserva:#00FF08;
 }
 
 * {
@@ -11,7 +17,7 @@
 }
 
 body {
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-preta);
     height: 100vh;
 }
 
@@ -25,10 +31,32 @@ header {
     padding: 40px 4%;
 }
 
-header > .interface {
+header>.interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+header a {
+    color: var(--cor-branca);
+    text-decoration: none;
+}
 
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contacto button  {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--cor-principal);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
