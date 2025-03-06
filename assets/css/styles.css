@@ -231,10 +231,9 @@ section.projectos {
     padding: 40px 4%;
 }
 
-
 .projectos .flex {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     /* Cria colunas dinâmicas */
     gap: 40px;
     /* Espaço entre os itens */
@@ -271,6 +270,12 @@ section.projectos {
     font-size: 22px;
     margin: 15px 0;
 }
+
+.projectos .projectos-box p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
 
 .projectos .projectos-box .btn-codigo button {
     width: 30px;
