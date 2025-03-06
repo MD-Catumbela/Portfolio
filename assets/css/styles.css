@@ -593,36 +593,19 @@ footer .line-footer p a:hover {
     }
 
 
-    /*sobre*/
-
-    .projectos .flex {
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    /*habilidades*/
+    .swiper-slide {
+        padding: 20px; /* Reduz de 40px para 20px */
     }
 
-    .projectos-box {
-        max-width: 250px;
+    .swiper-slide img {
+        width: 40px; /* De 50px para 40px */
     }
-
-}
-
-@media (max-width: 768px) {
-    .projectos-box {
-        max-width: 200px;
+    
+    .swiper-slide h5 {
+        font-size: 13px; /* Reduz de 15px para 13px */
     }
+    
 
-    .btn-codigo button {
-        font-size: 10px;
-        padding: 4px 8px;
-    }
-}
-
-@media (max-width: 480px) {
-    .flex {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .projectos-box {
-        max-width: 90%;
-    }
+  
 }
