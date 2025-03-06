@@ -53,7 +53,7 @@ body {
     transition: 0.5s;
 }
 
-.btn-contacto button:hover {
+ button:hover {
     background-color: var(--cor-segundaria);
     transform: scale(1.3);
 }
@@ -144,8 +144,10 @@ section.especialidades {
 
 .especialidades .flex {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cria colunas dinâmicas */
-    gap: 40px; /* Espaço entre os itens */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Cria colunas dinâmicas */
+    gap: 40px;
+    /* Espaço entre os itens */
     justify-content: center;
 }
 
@@ -157,7 +159,8 @@ section.especialidades {
     margin-top: 50px;
     transition: 0.5s;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente transparente */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Fundo levemente transparente */
 }
 
 
@@ -168,7 +171,8 @@ section.especialidades {
 
 
 .especialidades .especialidades-box img {
-    width: 80px; /* Tamanho fixo da imagem */
+    width: 80px;
+    /* Tamanho fixo da imagem */
     max-width: 100%;
 }
 
@@ -176,4 +180,47 @@ section.especialidades {
 .especialidades .especialidades-box h3 {
     font-size: 22px;
     margin: 15px 0;
+}
+
+/* SOBRE */
+section.sobre {
+    padding: 40px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.sobre .txt-sobre {
+    color: var(--cor-branca);
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: var(--cor-principal);
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--cor-principal);
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 1.2s;
 }
