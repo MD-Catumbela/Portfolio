@@ -594,6 +594,11 @@ footer .line-footer p a:hover {
 
 
     /*sobre*/
+
+    .projectos .flex {
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    }
+
     .projectos-box {
         max-width: 250px;
     }
