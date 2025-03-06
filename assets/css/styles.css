@@ -88,9 +88,14 @@ header nav ul {
 header nav ul li {
     display: inline-block;
 }
+
 /*mobile*/
-.menu-mobile{
-background-color: red;
+.menu-mobile {
+    background-color: red;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 
 

@@ -11,7 +11,7 @@ var swiper = new Swiper(".especialidades-slider", {
 
     breakpoints: {
         1020: { // Quando a tela for 1020px ou menor
-            slidesPerView: 5, // Exibe apenas 3 slides
+            slidesPerView: 3, // Exibe apenas 3 slides
         },
         768: { // Para tablets menores
             slidesPerView: 5,
