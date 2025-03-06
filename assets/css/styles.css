@@ -1,112 +1,131 @@
 /* ESTILO GERAL */
-
-/* Definição de variáveis globais para cores */
 :root {
-    --cor-preta: #000;       /* Cor de fundo principal (preto) */
-    --cor-branca: #fff;      /* Cor para textos e elementos em destaque (branco) */
-    --cor-cinza: #7d7d7d;    /* Cor secundária para textos */
-    --cor-principal: #ff8806;  /* Cor principal para botões e destaques (laranja) */
-    --cor-segundaria: #2ed0e4; /* Cor secundária para efeitos e interações (azul claro) */
-    --cor-reserva: #00FF08;  /* Cor reserva (verde neon) */
+    --cor-preta: #000;
+    --cor-branca: #fff;
+    --cor-cinza: #7d7d7d;
+    --cor-principal: #2ed0e4;
+    --cor-segundaria: #ff8806;
+    --cor-reserva: #00FF08;
+    --cor-m: #ff8806;
+    --cor-d: #2ed0e4;
 }
 
-/* Reset de estilos padrão para todos os elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; /* Define a fonte padrão para todo o site */
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Estilização do corpo da página */
 body {
-    background-color: var(--cor-preta); /* Define a cor de fundo do site */
-    min-height: 100vh; /* Garante que a altura mínima seja de 100% da tela */
+    background-color: var(--cor-preta);
+    min-height: 100vh;
 }
 
-/* Container para centralizar o conteúdo dentro do site */
+
 .interface {
-    max-width: 1280px; /* Define a largura máxima do conteúdo */
-    margin: 0 auto; /* Centraliza o conteúdo na tela */
-    padding: 0 4%; /* Adiciona um pequeno espaçamento lateral */
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
 }
+
+.flex {
+    display: flex;
+}
+
+.btn-contacto button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--cor-principal);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-contacto button:hover {
+    background-color: var(--cor-segundaria);
+    transform: scale(1.3);
+}
+
 
 /* ESTILO CABEÇALHO */
-
-/* Define o espaçamento interno do cabeçalho */
 header {
     padding: 20px 4%;
 }
 
-/* Organiza os elementos do cabeçalho horizontalmente */
 header>.interface {
-    display: flex; /* Exibe os itens lado a lado */
-    align-items: center; /* Alinha os itens verticalmente */
-    justify-content: space-between; /* Distribui os itens igualmente */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* Estilização dos links do cabeçalho */
 header a {
-    color: var(--cor-branca); /* Define a cor do texto */
-    text-decoration: none; /* Remove o sublinhado padrão */
-    display: inline-block; /* Mantém o comportamento de bloco inline */
-    transition: 0.2s; /* Aplica uma transição suave nos efeitos */
+    color: var(--cor-branca);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
 }
 
-/* Efeito ao passar o mouse sobre os links */
 header a:hover {
-    color: var(--cor-segundaria); /* Muda a cor do link ao passar o mouse */
-    transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+    color: var(--cor-segundaria);
+    transform: scale(1.3);
 }
 
-/* Remove os marcadores padrão da lista de navegação */
 header nav ul {
     list-style-type: none;
-    display: flex; /* Exibe os itens lado a lado */
-    gap: 20px; /* Adiciona um espaçamento entre os itens */
+    display: flex;
+    gap: 20px;
 }
 
-/* Define os itens do menu como elementos inline */
 header nav ul li {
     display: inline-block;
 }
 
-/* Estilização do botão de contato */
-header .btn-contacto button {
-    padding: 10px 40px; /* Define o tamanho do botão */
-    font-size: 18px; /* Ajusta o tamanho da fonte */
-    font-weight: 700; /* Deixa o texto mais destacado */
-    background-color: var(--cor-principal); /* Aplica a cor principal */
-    border: 0; /* Remove a borda padrão */
-    border-radius: 10px; /* Arredonda os cantos do botão */
-    cursor: pointer; /* Muda o cursor para indicar clique */
-    transition: 0.3s; /* Aplica um efeito suave nas interações */
+
+
+
+/* ESTILO TOPO DO SITE */
+section.topo-do-site {
+    padding: 40px 4%;
 }
 
-/* Efeito ao passar o mouse sobre o botão */
-header .btn-contacto button:hover {
-    background-color: var(--cor-segundaria); /* Altera a cor de fundo no hover */
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: var(--cor-branca);
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site h1 span {
+    color: var(--cor-principal);
+}
+
+.topo-do-site .txt-topo-site p {
+    color: var(--cor-branca);
+    margin: 40px 0;
+    text-align: justify;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
 }
 
 /* RESPONSIVIDADE */
-
-/* Ajustes para telas menores (até 768px) */
-@media (max-width: 768px) {
-    /* Organiza os elementos do cabeçalho em coluna para melhor adaptação */
-    header>.interface {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    /* Empilha os itens do menu verticalmente */
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    /* Ajusta o botão para ocupar mais espaço */
-    header .btn-contacto button {
-        width: 100%;
-        max-width: 250px;
-    }
-}
