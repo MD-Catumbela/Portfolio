@@ -470,34 +470,34 @@ footer .line-footer p a:hover {
         padding: 20px 8%;
     }
 
-    .txt-topo-site h1{
+    .txt-topo-site h1 {
         font-size: 32px;
     }
 
     .topo-do-site .img-topo-site img {
-       width: 100%;
+        width: 100%;
     }
-    
-/* ---------------------------------------------------------ESPECIALIDADES */
-.especialidades {
-    padding: 30px 4% 50px;
-}
 
-.swiper-slide {
-    padding: 25px;
-    margin: 5px;
-}
+    /* ---------------------ESPECIALIDADES */
+    .especialidades {
+        padding: 30px 4% 50px;
+    }
 
-.swiper-slide h5 {
-    font-size: 14px;
-}
+    .swiper-slide {
+        padding: 25px;
+        margin: 5px;
+    }
 
-.swiper-slide img {
-    width: 40px;
-}
-    
-    
-    
+    .swiper-slide h5 {
+        font-size: 14px;
+    }
 
-   
+    .swiper-slide img {
+        width: 40px;
+    }
+
+
+
+
+
 }
