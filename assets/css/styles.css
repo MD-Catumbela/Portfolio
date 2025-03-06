@@ -2,12 +2,21 @@
 :root {
     --cor-preta: #000;
     --cor-branca: #fff;
-    --cor-cinza: #7d7d7d;
     --cor-principal: #2ed0e4;
     --cor-segundaria: #ff8806;
     --cor-reserva: #00FF08;
     --cor-m: #ff8806;
     --cor-d: #2ed0e4;
+}
+
+h2.titulo {
+    color: var(--cor-branca);
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: var(--cor-principal);
 }
 
 * {
@@ -84,8 +93,6 @@ header nav ul li {
 }
 
 
-
-
 /* ESTILO TOPO DO SITE */
 section.topo-do-site {
     padding: 40px 4%;
@@ -128,4 +135,45 @@ section.topo-do-site .flex {
     }
 }
 
-/* RESPONSIVIDADE */
+/* ESPECIALIDADES */
+
+section.especialidades {
+    padding: 40px 4%;
+}
+
+
+.especialidades .flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cria colunas dinâmicas */
+    gap: 40px; /* Espaço entre os itens */
+    justify-content: center;
+}
+
+
+.especialidades .especialidades-box {
+    color: var(--cor-branca);
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 50px;
+    transition: 0.5s;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente transparente */
+}
+
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px var(--cor-branca);
+}
+
+
+.especialidades .especialidades-box img {
+    width: 80px; /* Tamanho fixo da imagem */
+    max-width: 100%;
+}
+
+
+.especialidades .especialidades-box h3 {
+    font-size: 22px;
+    margin: 15px 0;
+}
