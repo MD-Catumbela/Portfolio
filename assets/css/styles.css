@@ -408,15 +408,18 @@ form .btn-enviar input:hover {
 footer {
     padding: 50px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
-    background-color: #121212; /* Opcional: Fundo escuro para destaque */
+    background-color: #121212;
+    /* Opcional: Fundo escuro para destaque */
 }
 
 footer .flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Ajusta para telas menores */
-    gap: 20px; /* Espaço entre os elementos */
+    flex-wrap: wrap;
+    /* Ajusta para telas menores */
+    gap: 20px;
+    /* Espaço entre os elementos */
 }
 
 footer .line-footer {
@@ -443,4 +446,23 @@ footer .line-footer p a {
 /* Efeito ao passar o mouse */
 footer .line-footer p a:hover {
     color: var(--cor-principal);
+}
+
+/* ---------------------------------------------------RESPONSIVIDADE*/
+@media screen and (max-width: 1020px) {
+
+    /*Class Gerais*/
+    .flex {
+        flex-direction: column;
+    }
+
+    /*Cabeçalho*/
+    .menu-desktop,
+    .btn-contacto {
+        display: none;
+    }
+
+    .topo-do-site {
+        justify-content: space-between;
+    }
 }
