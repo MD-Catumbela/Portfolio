@@ -14,7 +14,7 @@ var swiper = new Swiper(".especialidades-slider", {
             slidesPerView: 3, // Exibe apenas 3 slides
         },
         768: { // Para tablets menores
-            slidesPerView: 5,
+            slidesPerView: 3,
         },
         480: { // Para celulares
             slidesPerView: 3,

@@ -74,18 +74,18 @@ header a {
     transition: 0.3s;
 }
 
-header a:hover {
+header nav.menu-desktop a:hover {
     color: var(--cor-segundaria);
     transform: scale(1.05);
 }
 
-header nav ul {
+header nav.menu-desktop ul {
     list-style-type: none;
     display: flex;
     gap: 20px;
 }
 
-header nav ul li {
+header nav.menu-desktop ul li {
     display: inline-block;
 }
 
@@ -96,7 +96,34 @@ header nav ul li {
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 999999;
+    width: 70%;
 }
+
+.menu-mobile nav ul {
+   
+}
+.menu-mobile nav ul li a {
+   
+}
+
+/*
+.menu-mobile nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.menu-mobile nav ul li a {
+    color: var(--cor-branca);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+*/
 
 
 /* -----------------------------------------------ESTILO TOPO DO SITE */
